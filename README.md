@@ -1,142 +1,143 @@
-🗂️ Task Manager Application
+✅ Task Manager – Full Stack Application
 
-A full-stack Task Manager application that allows users to register, log in, and manage their personal tasks securely.
-The project is built using FastAPI for the backend and React for the frontend, following clean architecture and REST API principles.
+    A full-stack Task Manager application built using FastAPI (Backend) and React (Frontend).
+    This project allows users to register, log in, and manage personal tasks securely using JWT authentication.
+    
+---
+    
+🎯 Built as an internship-ready project focusing on APIs, reliability, and clean architecture.
 
-🚀 Features
+✨ Key Features
 
-User registration and login
+    🔐 User authentication (Register & Login)
 
-JWT-based authentication
+    🛡️ JWT-based secure APIs
 
-Create, view, and delete tasks
+    📝 Create, view, and delete tasks
 
-Tasks are user-specific (private)
+    👤 User-specific task isolation
 
-Clean separation of frontend and backend
+    ⚙️ REST API with proper validation & error handling
 
-RESTful API design
+    🧪 Basic backend tests
 
-Simple and intuitive UI
+    🎨 Simple, clean frontend UI
 
-🛠️ Tech Stack
-Frontend
+---
 
-React (Vite)
+🧰 Tech Stack
+    🖥️ Frontend
+    
+        - React (Vite)
+        - JavaScript
+        - HTML & CSS
 
-JavaScript
+    Axios (API integration)
 
-HTML & CSS
+    ⚙️ Backend
 
-Axios for API calls
+        - FastAPI
+        - Python
+        - SQLAlchemy
+        - PostgreSQL
+        - JWT Authentication
+        - Pydantic schemas
 
-Backend
+---
 
-FastAPI
+📁 Project Structure
 
-Python
+    Task_Manager/
+    │
+    ├── README.md              # Project overview
+    │
+    ├── backend/               # FastAPI backend
+    │   ├── README.md
+    │   ├── app/
+    │   ├── tests/
+    │   └── Pipfile
+    │
+    └── frontend/              # React frontend
+        ├── README.md
+        ├── src/
+        └── package.json
 
-SQLAlchemy
+---
 
-SQLite (can be extended to PostgreSQL/MySQL)
-
-JWT Authentication
-
-Pydantic schemas
-
-📂 Project Structure
-Task_Manager/
-├── README.md          # Project overview
-├── backend/           # FastAPI backend
-│   ├── README.md
-│   ├── app/
-│   ├── tests/
-│   └── Pipfile
-└── frontend/          # React frontend
-    ├── README.md
-    ├── src/
-    └── package.json
-
-⚙️ How to Run the Project
-1️⃣ Backend Setup
-cd backend
-pip install pipenv
-pipenv install
-pipenv shell
-uvicorn app.main:app --reload
-
-
-Backend will run at:
-
-http://127.0.0.1:8000
-
-
-API Docs:
-
-http://127.0.0.1:8000/docs
-
-2️⃣ Frontend Setup
-cd frontend
-npm install
-npm run dev
+🚀 Getting Started
+    ▶️ Backend Setup
+        cd backend
+        pip install pipenv
+        pipenv install
+        pipenv shell
+        uvicorn app.main:app --reload
 
 
-Frontend will run at:
+    📍 Backend runs at
+    
+        http://127.0.0.1:8000
 
-http://localhost:5173
 
-🔐 Authentication Flow
+    📘 Swagger Docs
+    
+        http://127.0.0.1:8000/docs
 
-User registers with username, email, and password
+    ▶️ Frontend Setup
+        cd frontend
+        npm install
+        npm run dev
 
-User logs in and receives a JWT token
 
-Token is stored in local storage
+    🌐 Frontend runs at
+    
+        http://localhost:5173
 
-Authenticated requests include the token in headers
+ ---
 
-Users can only access their own tasks
+🔑 Authentication Flow
+
+    1️⃣ User registers with username, email, and password
+    2️⃣ User logs in and receives a JWT access token
+    3️⃣ Token is stored in browser local storage
+    4️⃣ Token is sent with API requests via headers
+    5️⃣ Each user can only access their own tasks
+
+---
 
 🧪 Testing
 
-Backend includes basic tests for:
+    Basic backend tests are included for:
+    
+    Authentication
+    
+    Task APIs
+    
+    Run tests using:
+    
+        pytest
 
-Authentication
+---
 
-Task APIs
+🎯 Why This Project?
 
-Run tests using:
+    This project was built to:
+    
+        - Practice backend API development
+        
+        - Understand authentication & authorization
+        
+        - Work with databases and ORM
+        
+        - Integrate frontend with REST APIs
+        
+        - Follow real-world project structure
+        
+        - Build an interview-ready full-stack project
 
-pytest
-
-🎯 Purpose of This Project
-
-This project was built to:
-
-Understand full-stack development
-
-Practice REST API design
-
-Learn authentication and authorization
-
-Gain hands-on experience with FastAPI and React
-
-Build a real-world, interview-ready project
+---
 
 👩‍💻 Author
 
-Sanika Todkar
-
-GitHub: SanikaTodkar
-
-📌 Future Improvements
-
-Update and complete task functionality
-
-Better UI styling
-
-Task status (completed / pending)
-
-Pagination and search
-
-Deployment using Docker / Cloud
+    Sanika Todkar
+    
+    GitHub: 👉 https://github.com/SanikaTodkar
