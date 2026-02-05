@@ -11,6 +11,9 @@ psycopg2-binary = "*"
 python-jose = "*"
 passlib = {extras = ["bcrypt"], version = "*"}
 python-dotenv = "*"
+email-validator = "*"
+bcrypt = "==3.2.0"
+pytest = "*"
 httpx = "*"
 
 [dev-packages]
